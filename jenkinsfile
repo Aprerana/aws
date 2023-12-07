@@ -1,7 +1,7 @@
 pipeline {
 agent {
     label {
-        label "slave-2"
+        label "slave-3"
         customWorkspace "/mnt/workspace"
          }
 }
@@ -15,7 +15,7 @@ stages {
 
     stage ("clone-repo") {
         steps {
-            git branch: '2023q2', changelog: false, credentialsId: 'ssh-key', poll: false, url: 'https://github.com/Aprerana/aws.git'
+            git branch: '2023q3', changelog: false, credentialsId: 'ssh-key', poll: false, url: 'https://github.com/Aprerana/aws.git'
     }
 }
 
