@@ -21,7 +21,7 @@ stages {
 
 stage ("deploy index.html") {
     steps {
-        sh " sudo chmod -R /var/www/html/"
+        sh " sudo chmod -R 777 /var/www/html/"
         sh "cp index.html /var/www/html"
     }
 }
